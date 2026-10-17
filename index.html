@@ -9,41 +9,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-amber-50 text-amber-50">
+<body class="min-h-screen bg-amber-50 text-amber-50 selection:bg-cyan-500">
     <header>
-        <nav class="flex flex-row justify-center space-x-32 bg-blue-400 p-11">
-            <div class="flex justify-left">
-                <p class="text-black text-2xl font-bold">AI NEXUMS</p>
+
+        <nav class="flex flex-row justify-between items-center bg-[#050714] p-11">
+            <a href="./index.html" class="flex items-center">
+                <img src="sources\NEW_LOGO.jpg" alt="Company Logo" class="h-10 md:h-12 w-auto object-contain">
+            </a>
+            <div class="flex flex-row justify-end gap-10">
+                <a class="sm:text-lg md:text-xl lg:text-2xl" href="./index.html">Home</a>
+                <a class="sm:text-lg md:text-xl lg:text-2xl" href="./course.html">Courses</a>
+                <a class="sm:text-lg md:text-xl lg:text-2xl" href="./Job.html">Jobs</a>
+                <a class="sm:text-lg md:text-xl lg:text-2xl" href="./aboutus.html">About Us</a>
             </div>
-            <a class="sm:text-lg md:text-xl lg:text-2xl xl:text-4xl" href="./index.html">Home</a>
-            <a class="sm:text-lg md:text-xl lg:text-2xl xl:text-4xl" href="./course.html">Course</a>
-            <a class="sm:text-lg md:text-xl lg:text-2xl xl:text-4xl" href="./Job.html">Job</a>
-            <a class="sm:text-lg md:text-xl lg:text-2xl xl:text-4xl" href="./aboutus.html">About Us</a>
+
         </nav>
     </header>
 
-    <section class="w-full">
-        <h1 class="text-black justify-left sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold">Recent Events</h1>
+    <main class="min-h-screen">
+        <section class="flex items-center justify-center">
+            <h1 class="sm:text-lg md:text-xl lg:text-2xl font-bold text-black text-center mt-6">Master AI Engineering &
+                Accelerate
+                Your Tech Career<br>
+                Upskill with industry-grade courses or join our high-impact team</h1>
+        </section>
 
-        <div class="flex flex-row gap-6 overflow-x-auto">
-            <div class="flex flex-col shirk-0">
-                <img src="./sources/web-workshop.jpg" class="w-25 h-25">
-                <p class="text-black ">Web development workshop</p>
+        <section class="flex flex-col md:flex-row flex-grow justify-center gap-10">
+            <div class="flex-1 text-center border-2 border-black rounded-3xl mt-10 mb-10 ml-10 mr-10">
+                <h1 class="sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6">
+                    AI MAXIMUS now hiring!</h1>
+                <p class="text-black">We are looking for someone who willing to learn new things!</p>
+                <a href="./Job.html"
+                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">
+                    Check it out!
+                </a>
             </div>
 
-            <div class="flex flex-col shirk-0">
-                <img src="./sources/web-workshop.jpg" class="w-25 h-25">
-                <p class="text-black">Web development workshop</p>
+            <div class="flex-1 text-center border-2 border-black rounded-3xl m-10">
+                <h1 class="sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6">
+                    Not confident in your skills? We can help!</h1>
+                <p class="text-black">With AI MAXIMUS we provide you with the best courses and training programs to help
+                    you
+                    achieve your goals.</p>
+                <a href="./course.html"
+                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">
+                    Check it out!
+                </a>
             </div>
+        </section>
 
-            <div class="flex flex-col shirk-0">
-                <img src="./sources/web-workshop.jpg" class="w-25 h-25">
-                <p class="text-black">Web development workshop</p>
-            </div>
-        </div>
-    </section>
+        <section>
+            <h1 class="sm:text-lg md:text-xl lg:text-2xl font-bold text-black text-center mt-6">
+                Recommended Courses</h1>
+        </section>
+    </main>
 
-
+    <footer class="bg-[#03050d] py-4 text-center text-xs text-slate-500">
+        <p>© 2025 AI MAXIMUS. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
