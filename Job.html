@@ -4,13 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="min-h-screen bg-gray-200 text-white selection:bg-cyan-500">
+    <header>
+        <!-- Navbar -->
+        <div class="navbar bg-[#050714] shadow-sm">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl">AI MAXIMUS</a>
+            </div>
+            <div class="flex-row sm:gap-2 md:gap-4 lg:gap-6 hidden sm:flex">
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./index.html">Home</a>
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./course.html">Courses</a>
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./Job.html">Jobs</a>
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./aboutus.html">About Us</a>
+            </div>
 
+            <div class="sm:hidden dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost text-sm md:text-lg lg:text-xl">
+                    <img src="./sources/icons/bars-solid-full.svg" alt="Menu" class="w-8 h-8 invert">
+                </label>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./course.html">Courses</a></li>
+                    <li><a href="./Job.html">Jobs</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="min-h-screen p-4">
+        <div class="hero">
+            <div class="hero-content text-center">
+                <div class="max-w-lg">
+                    <h1 class="sm:text-lg md:text-xl lg:text-2xl font-bold text-black">We are hiring!</h1>
+                    <p class="sm:text-sm md:text-base lg:text-lg text-black">Join our team and help shape the future of
+                        AI!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid w-full grid-cols-1 lg:grid-cols-2 gap-4 mt-6 mb-6 p-4 sm:p-8">
+            <div class="card shadow-sm bg-white rounded-box grid min-w-0 lg:flex-1 text-black">
+                <div class="card-body gap-4 p-6 sm:p-8">
+                    <div class="card-title text-sm md:text-lg lg:text-2xl font-bold text-black">
+                        <div class="flex flex-row items-center">
+                            <img src="./sources/icons/user-solid-full.svg" alt="User" class="w-6 h-6 mr-2">
+                            <span class="leading-snug">AI-Assisted Web Developer</span>
+                        </div>
+                    </div>
+                    <p class="text-black leading-relaxed">NexGen Innovations is looking for a talented Frontend
+                        Developer who is highly proficient in modern web
+                        technologies (HTML5, CSS3, JavaScript) and enthusiastic about adopting AI Coding Tools (such as
+                        GitHub Copilot,
+                        Cursor, ChatGPT, Claude, V0) to exponentially boost coding speed, accuracy, and workflow
+                        efficiency. You will
+                        collaborate with our design and backend teams to build stunning, responsive, and seamless user
+                        experiences.</p>
+                    <div class="card-actions mt-auto pt-2">
+                        <a href="./Job-AI-Assisted.html" class="btn btn-primary text-white">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow-sm bg-white rounded-box grid min-w-0 lg:flex-1 text-black">
+                <div class="card-body gap-4 p-6 sm:p-8">
+                    <div class="card-title text-sm md:text-lg lg:text-2xl font-bold text-black">
+                        <div class="flex flex-row items-center">
+                            <img src="./sources/icons/user-solid-full.svg" alt="User" class="w-6 h-6 mr-2">
+                            <span class="leading-snug">Digital & AI Transformation Associate</span>
+                        </div>
+                    </div>
+                    <p class="text-black leading-relaxed">Siam Smart Solution is looking to recruit a Digital & AI
+                        Transformation Associate to join our team in the heart of
+                        Bangkok (Sathorn). In this role, you will analyze existing workflows across various departments
+                        and identify
+                        opportunities to introduce No-Code/Low-Code AI automation tools, making business processes
+                        faster, highly
+                        accurate, and exponentially more efficien</p>
+                    <div class="card-actions mt-auto pt-2">
+                        <a href="./Job-Digital.html" class="btn btn-primary text-white">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow-sm bg-white rounded-box grid min-w-0 text-black">
+                <div class="card-body gap-4 p-6 sm:p-8">
+                    <h2 class="card-title text-sm md:text-lg lg:text-2xl font-bold text-black">
+                        <img src="./sources/icons/user-solid-full.svg" alt="" class="w-6 h-6 shrink-0">
+                        <span class="leading-snug">Machine Learning Engineer</span>
+                    </h2>
+                    <p class="text-black leading-relaxed">AI MAXIMUS is looking for a Machine Learning Engineer to turn data into practical AI features. You will work with product and engineering teams to prepare datasets, train and evaluate models, and integrate reliable predictions into applications.</p>
+                    <div class="card-actions mt-auto pt-2">
+                        <a href="./Job-Machine-Learning.html" class="btn btn-primary text-white">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow-sm bg-white rounded-box grid min-w-0 text-black">
+                <div class="card-body gap-4 p-6 sm:p-8">
+                    <h2 class="card-title text-sm md:text-lg lg:text-2xl font-bold text-black">
+                        <img src="./sources/icons/user-solid-full.svg" alt="" class="w-6 h-6 shrink-0">
+                        <span class="leading-snug">Data Analyst</span>
+                    </h2>
+                    <p class="text-black leading-relaxed">AI MAXIMUS is looking for a Data Analyst who can turn business questions into clear, useful insights. You will work with teams across the company to clean data, build reports and dashboards, and explain findings that support everyday decisions.</p>
+                    <div class="card-actions mt-auto pt-2">
+                        <a href="./Job-Data-Analyst.html" class="btn btn-primary text-white">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow-sm bg-white rounded-box grid min-w-0 text-black">
+                <div class="card-body gap-4 p-6 sm:p-8">
+                    <h2 class="card-title text-sm md:text-lg lg:text-2xl font-bold text-black">
+                        <img src="./sources/icons/user-solid-full.svg" alt="" class="w-6 h-6 shrink-0">
+                        <span class="leading-snug">AI Product UX/UI Designer</span>
+                    </h2>
+                    <p class="text-black leading-relaxed">AI MAXIMUS is looking for a UX/UI Designer to create clear, accessible experiences for AI-powered products. You will work with users, product managers, and developers to turn complex features into interfaces that are easy to understand and use.</p>
+                    <div class="card-actions mt-auto pt-2">
+                        <a href="./Job-UX-UI.html" class="btn btn-primary text-white">See Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#03050d] py-4 text-center text-xs text-slate-500">
+        <p>© 2025 AI MAXIMUS. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

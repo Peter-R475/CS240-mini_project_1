@@ -1,16 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us | AI MAXIMUS</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="min-h-screen bg-gray-200 text-white selection:bg-cyan-500">
+    <header>
+        <!-- Navbar -->
+        <div class="navbar bg-[#050714] shadow-sm">
+            <div class="flex-1">
+                <a href="./index.html" class="btn btn-ghost text-sm md:text-lg lg:text-xl">AI MAXIMUS</a>
+            </div>
+            <div class="flex-row sm:gap-2 md:gap-4 lg:gap-6 hidden sm:flex">
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./index.html">Home</a>
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./course.html">Courses</a>
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./Job.html">Jobs</a>
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./aboutus.html" aria-current="page">About Us</a>
+            </div>
 
+            <div class="sm:hidden dropdown dropdown-end z-20">
+                <button type="button" tabindex="0" aria-label="เปิดเมนูนำทาง" class="btn btn-ghost text-sm md:text-lg lg:text-xl">
+                    <img src="./sources/icons/bars-solid-full.svg" alt="Menu" class="w-8 h-8 invert">
+                </button>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white text-black rounded-box w-52">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./course.html">Courses</a></li>
+                    <li><a href="./Job.html">Jobs</a></li>
+                    <li><a href="./aboutus.html" aria-current="page">About Us</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </header>
+    <main id="main-content" class="min-h-screen mx-auto max-w-6xl px-4 sm:px-8 py-10 text-black">
+        <div id="about-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section id="about-us" aria-labelledby="about-heading" class="card shadow-sm bg-white rounded-box min-w-0 md:col-span-2">
+                <div class="card-body gap-4 p-6 sm:p-8">
+                    <h1 id="about-heading" lang="en" class="card-title text-2xl sm:text-3xl font-bold">About Us</h1>
+                    <p class="text-xl font-semibold">บริษัท AI MAXIMUS</p>
+                    <p class="max-w-3xl leading-relaxed">AI MAXIMUS เป็นพื้นที่สำหรับผู้ที่สนใจเรียนรู้และพัฒนาทักษะด้านปัญญาประดิษฐ์ เรารวบรวมคอร์สตั้งแต่พื้นฐานไปจนถึงการประยุกต์ใช้งาน พร้อมข้อมูลตำแหน่งงานสำหรับผู้ที่ต้องการนำทักษะไปต่อยอดในสายอาชีพ</p>
+                    <div class="card-actions flex-wrap gap-3 pt-2">
+                        <a href="./course.html" class="btn btn-primary text-white">ดูคอร์สทั้งหมด</a>
+                        <a href="./Job.html" class="btn btn-outline">ร่วมงานกับเรา</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="history" aria-labelledby="history-heading" class="card shadow-sm bg-white rounded-box min-w-0">
+                <div class="card-body gap-4 p-6 sm:p-8">
+                    <h2 id="history-heading" lang="en" class="card-title text-xl sm:text-2xl font-bold">History</h2>
+                    <p class="leading-relaxed">ยังไม่ได้เพิ่มข้อมูลประวัติบริษัท AI MAXIMUS</p>
+                    <p class="text-sm leading-relaxed text-slate-600">พื้นที่สำหรับเรื่องราวจุดเริ่มต้น แนวคิด และพัฒนาการของบริษัท</p>
+                </div>
+            </section>
+
+            <section id="contact" aria-labelledby="contact-heading" class="card shadow-sm bg-white rounded-box min-w-0">
+                <div class="card-body gap-4 p-6 sm:p-8">
+                    <h2 id="contact-heading" lang="en" class="card-title text-xl sm:text-2xl font-bold">Contact &amp; Address</h2>
+                    <address class="not-italic space-y-4 leading-relaxed">
+                        <p class="font-semibold">บริษัท AI MAXIMUS</p>
+                        <div>
+                            <p class="font-semibold mb-1">ที่อยู่</p>
+                            <p>มหาวิทยาลัยกรุงเทพ 9 1 ถ. พหลโยธิน ตำบล คลองหนึ่ง อำเภอคลองหลวง ปทุมธานี 12120</p>
+                        </div>
+                        <dl class="space-y-3">
+                            <div>
+                                <dt class="text-sm font-semibold">เบอร์โทร</dt>
+                                <dd class="mt-1"><a href="tel:0631234567" class="inline-block text-blue-800 underline underline-offset-4">063-123-4567</a></dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm font-semibold">อีเมล</dt>
+                                <dd class="mt-1 break-words"><a href="mailto:aimaximus@gmail.com" class="text-blue-800 underline underline-offset-4">aimaximus@gmail.com</a></dd>
+                            </div>
+                        </dl>
+                    </address>
+                </div>
+            </section>
+            <section id="teams" aria-labelledby="teams-heading" class="card shadow-sm bg-white rounded-box min-w-0 md:col-span-2">
+                <div class="card-body gap-6 p-6 sm:p-8">
+                    <h2 id="teams-heading" lang="en" class="card-title text-xl sm:text-2xl font-bold">Teams</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <article aria-labelledby="team-member-1" class="min-w-0">
+                            <div class="flex flex-col sm:flex-row items-start gap-5">
+                                <div class="avatar shrink-0">
+                                    <div class="w-20 rounded-full bg-blue-100">
+                                        <img src="./sources/icons/user-solid-full.svg" alt="" width="80" height="80" class="p-5">
+                                    </div>
+                                </div>
+                                <div class="min-w-0 flex-1">
+                                    <h3 id="team-member-1" lang="en" class="text-lg font-bold leading-snug break-words">Rapeephat Wannasamran</h3>
+                                    <dl class="mt-4 space-y-3 text-sm leading-relaxed">
+                                        <div>
+                                            <dt class="font-semibold">อีเมล</dt>
+                                            <dd class="mt-1 break-words"><a href="mailto:rapeephat.wann@bumail.net" class="text-blue-800 underline underline-offset-4">rapeephat.wann@bumail.net</a></dd>
+                                        </div>
+                                        <div>
+                                            <dt class="font-semibold">เบอร์โทร</dt>
+                                            <dd class="mt-1 text-slate-600">0993673106</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </article>
+                        <article aria-labelledby="team-member-2" class="min-w-0">
+                            <div class="flex flex-col sm:flex-row items-start gap-5">
+                                <div class="avatar shrink-0">
+                                    <div class="w-20 rounded-full bg-violet-100">
+                                        <img src="./sources/icons/user-solid-full.svg" alt="" width="80" height="80" class="p-5">
+                                    </div>
+                                </div>
+                                <div class="min-w-0 flex-1">
+                                    <h3 id="team-member-2" class="text-lg font-bold leading-snug">สมาชิกทีมคนที่ 2</h3>
+                                    <dl class="mt-4 space-y-3 text-sm leading-relaxed">
+                                        <div>
+                                            <dt class="font-semibold">ชื่อ</dt>
+                                            <dd class="mt-1 text-slate-600">ยังไม่ได้ระบุ</dd>
+                                        </div>
+                                        <div>
+                                            <dt class="font-semibold">อีเมล</dt>
+                                            <dd class="mt-1 text-slate-600">ยังไม่ได้ระบุ</dd>
+                                        </div>
+                                        <div>
+                                            <dt class="font-semibold">เบอร์โทร</dt>
+                                            <dd class="mt-1 text-slate-600">ยังไม่ได้ระบุ</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#03050d] py-4 text-center text-xs text-slate-500">
+        <p>© 2025 AI MAXIMUS. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

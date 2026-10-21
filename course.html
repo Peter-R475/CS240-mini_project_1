@@ -1,114 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>All Courses | AI MAXIMUS</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body class="min-h-screen bg-amber-50 text-amber-50 selection:bg-cyan-500">
+<body class="min-h-screen bg-gray-200 text-white selection:bg-cyan-500">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:block focus:bg-white focus:p-4 focus:text-black">Skip to courses</a>
     <header>
-
-        <nav class="flex flex-row justify-between items-center bg-[#050714] p-11">
-            <a href="./index.html" class="flex items-center">
-                <img src="sources\NEW_LOGO.jpg" alt="Company Logo" class="h-10 md:h-12 w-auto object-contain">
-            </a>
-            <div class="flex flex-row justify-end gap-10">
-                <a class="sm:text-lg md:text-xl lg:text-2xl" href="./index.html">Home</a>
-                <a class="sm:text-lg md:text-xl lg:text-2xl" href="./course.html">Courses</a>
-                <a class="sm:text-lg md:text-xl lg:text-2xl" href="./Job.html">Jobs</a>
-                <a class="sm:text-lg md:text-xl lg:text-2xl" href="./aboutus.html">About Us</a>
+        <!-- Navbar -->
+        <div class="navbar bg-[#050714] shadow-sm">
+            <div class="flex-1">
+                <a href="./index.html" class="btn btn-ghost text-sm md:text-lg lg:text-xl">AI MAXIMUS</a>
+            </div>
+            <div class="flex-row sm:gap-2 md:gap-4 lg:gap-6 hidden sm:flex">
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./index.html">Home</a>
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./course.html" aria-current="page">Courses</a>
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./Job.html">Jobs</a>
+                <a class="btn btn-ghost text-sm md:text-lg lg:text-xl" href="./aboutus.html">About Us</a>
             </div>
 
-        </nav>
+            <div class="sm:hidden dropdown dropdown-end z-20">
+                <button type="button" tabindex="0" aria-label="Open navigation menu" class="btn btn-ghost text-sm md:text-lg lg:text-xl">
+                    <img src="./sources/icons/bars-solid-full.svg" alt="Menu" class="w-8 h-8 invert">
+                </button>
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-white text-black rounded-box w-52">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./course.html" aria-current="page">Courses</a></li>
+                    <li><a href="./Job.html">Jobs</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+
+            </div>
+        </div>
+
     </header>
-
-    <main class="min-h-screen">
-        <section class="grid grid-cols-3 gap-10 justify-items-center items-center m-10">
-            <div class="mt-10 border-2 border-black rounded-3xl p-10 text-center">
-                <img src="sources\JS_course.jpg" alt="" class="h-10 md:h-28 w-auto object-contain mx-auto">
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">JavaScript for beginner</p>
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">price : 1200 THB</p>
-                <button
-                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">Buy
-                    now</button>
+    <main id="main-content" class="min-h-screen mx-auto max-w-6xl px-4 sm:px-8 py-10">
+        <section aria-labelledby="courses-heading">
+            <div class="max-w-2xl mx-auto text-center mb-10">
+                <h1 id="courses-heading" class="text-2xl sm:text-3xl font-bold text-black">Explore Our AI Courses</h1>
+                <p class="mt-4 text-base sm:text-lg text-black leading-relaxed">Start with the essentials, build practical projects, and take your AI skills further. Find your next step across 10 courses.</p>
             </div>
-
-            <div class="mt-10 border-2 border-black rounded-3xl p-10 text-center">
-                <img src="sources\JS_course.jpg" alt="" class="h-10 md:h-12 w-auto object-contain mx-auto">
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">JavaScript for beginner</p>
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">price : 1200 THB</p>
-                <button
-                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">Buy
-                    now</button>
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-6 text-sm text-black">
+                <p class="font-semibold">All courses <span class="ml-1 text-blue-800">(10)</span></p>
+                <p>From beginner foundations to advanced deployment</p>
             </div>
-
-            <div class="mt-10 border-2 border-black rounded-3xl p-10 text-center">
-                <img src="sources\JS_course.jpg" alt="" class="h-10 md:h-12 w-auto object-contain mx-auto">
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">JavaScript for beginner</p>
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">price : 1200 THB</p>
-                <button
-                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">Buy
-                    now</button>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article id="generative-ai" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/Generative-AI.jpg" alt="Generative AI course artwork" width="960" height="540" loading="eager" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Beginner</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">Generative AI Foundations &amp; Prompt Engineering Masterclass</span></h2>
+                        <p class="text-black leading-relaxed">Learn the fundamentals of Generative AI and master the art of prompt engineering.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Understand generative AI capabilities and limitations.</li>
+                                    <li>Write structured prompts and refine model responses.</li>
+                                    <li>Build a reusable prompt library for everyday tasks.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> No coding experience required.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article id="multimodal-ai" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/Multimodal-Generative.png" alt="Multimodal generative AI course artwork" width="960" height="540" loading="eager" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Beginner</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">Multimodal Generative AI for Business &amp; Creative Content</span></h2>
+                        <p class="text-black leading-relaxed">Discover how to use multimodal generative AI in your business strategies and creative projects.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Combine text, image, and audio in a creative workflow.</li>
+                                    <li>Develop a consistent visual brief and content storyboard.</li>
+                                    <li>Review generated content for quality and responsible use.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> Basic familiarity with generative AI.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article id="python-for-ai" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/courses/python-for-ai.webp" alt="Laptop with code, data cubes, and statistical charts" width="960" height="540" loading="eager" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Beginner</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">Python for AI &amp; Data Science</span></h2>
+                        <p class="text-black leading-relaxed">Build a practical Python foundation, explore datasets, and turn raw data into clear visual insights.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Write Python functions and work with lists and dictionaries.</li>
+                                    <li>Clean and explore datasets with NumPy and pandas.</li>
+                                    <li>Create charts and complete a data analysis notebook.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> No coding experience required.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article id="machine-learning" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/courses/machine-learning.webp" alt="Blue and gold data points separated by a decision surface" width="960" height="540" loading="lazy" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Intermediate</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">Machine Learning with Python</span></h2>
+                        <p class="text-black leading-relaxed">Turn data into predictions with regression, classification, and practical model evaluation.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Prepare features and separate training and test data.</li>
+                                    <li>Train regression and classification models with scikit-learn.</li>
+                                    <li>Compare models and identify overfitting and data leakage.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> Python basics and familiarity with tabular data.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article id="deep-learning" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/courses/deep-learning.webp" alt="Layers of glowing neural network nodes above a circuit board" width="960" height="540" loading="lazy" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Intermediate</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">Deep Learning &amp; Neural Networks</span></h2>
+                        <p class="text-black leading-relaxed">Build and train neural networks, understand how they learn, and improve them through experimentation.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Understand tensors, activation functions, and gradient descent.</li>
+                                    <li>Build a neural network training loop with PyTorch.</li>
+                                    <li>Use regularization and transfer learning to improve results.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> Python and basic machine learning concepts.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article id="computer-vision" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/courses/computer-vision.webp" alt="Camera observing a car and bicycle with detection boxes" width="960" height="540" loading="lazy" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Intermediate</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">Computer Vision with Python</span></h2>
+                        <p class="text-black leading-relaxed">Teach applications to interpret images through image processing, classification, and object detection.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Process images and video frames with OpenCV.</li>
+                                    <li>Apply pretrained models to image classification and detection.</li>
+                                    <li>Build a visual recognition demo and evaluate its errors.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> Python and basic neural network concepts.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article id="nlp" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/courses/nlp.webp" alt="Documents flowing through a language processor into semantic clusters" width="960" height="540" loading="lazy" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Intermediate</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">Natural Language Processing Essentials</span></h2>
+                        <p class="text-black leading-relaxed">Explore how AI works with language and build tools that classify, search, and summarize text.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Prepare text and compare tokenization techniques.</li>
+                                    <li>Represent meaning with embeddings and text classifiers.</li>
+                                    <li>Build a text analysis project and evaluate its predictions.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> Python and basic machine learning concepts.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article id="rag-chatbots" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/courses/rag-chatbots.webp" alt="A speech bubble connected to an open book and document library" width="960" height="540" loading="lazy" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Intermediate</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">Build AI Chatbots with RAG</span></h2>
+                        <p class="text-black leading-relaxed">Create a chatbot that retrieves information from your documents and answers with supporting sources.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Split documents into chunks and create searchable embeddings.</li>
+                                    <li>Connect retrieval to a language model with source citations.</li>
+                                    <li>Evaluate answer quality and handle missing information.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> Python basics and familiarity with LLM APIs.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article id="ai-agents" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/courses/ai-agents.webp" alt="A robotic arm arranging connected workflow task tiles" width="960" height="540" loading="lazy" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Intermediate</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">AI Agents &amp; Workflow Automation</span></h2>
+                        <p class="text-black leading-relaxed">Connect language models to tools and design useful workflows with clear controls and human review.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Define tool calls and structured outputs for an AI assistant.</li>
+                                    <li>Build a multi-step workflow with retries and state tracking.</li>
+                                    <li>Add permissions, human approval, and evaluation checks.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> Python basics and familiarity with APIs.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+                <article id="mlops" class="card shadow-sm bg-white rounded-box overflow-hidden min-w-0 text-black scroll-mt-6">
+                    <figure>
+                        <img src="./sources/courses/mlops.webp" alt="Server racks, a cloud, and a model deployment pipeline" width="960" height="540" loading="lazy" decoding="async" class="w-full aspect-video object-cover">
+                    </figure>
+                    <div class="card-body gap-4 p-6">
+                        <p class="text-sm font-medium text-blue-800 flex-none">Advanced</p>
+                        <h2 class="card-title text-xl font-bold"><span class="leading-snug">MLOps &amp; AI Model Deployment</span></h2>
+                        <p class="text-black leading-relaxed">Take a trained model beyond the notebook with reproducible packaging, deployment, and monitoring.</p>
+                        <details class="mt-auto pt-2">
+                            <summary class="cursor-pointer rounded-lg py-3 text-blue-800 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">View syllabus</summary>
+                            <div class="pt-3 text-sm leading-relaxed">
+                                <h3 class="font-bold">What you will learn</h3>
+                                <ul class="list-disc pl-5 mt-2 space-y-2">
+                                    <li>Track experiments and version model artifacts.</li>
+                                    <li>Package a prediction API with FastAPI and Docker.</li>
+                                    <li>Monitor prediction quality, latency, and model drift.</li>
+                                </ul>
+                                <p class="mt-4"><strong>Before you start:</strong> Experience training models and basic command-line skills.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
             </div>
-
-            <div class="mt-10 border-2 border-black rounded-3xl p-10 text-center">
-                <img src="sources\JS_course.jpg" alt="" class="h-10 md:h-12 w-auto object-contain mx-auto">
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">JavaScript for beginner</p>
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">price : 1200 THB</p>
-                <button
-                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">Buy
-                    now</button>
-            </div>
-
-            <div class="mt-10 border-2 border-black rounded-3xl p-10 text-center">
-                <img src="sources\JS_course.jpg" alt="" class="h-10 md:h-12 w-auto object-contain mx-auto">
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">JavaScript for beginner</p>
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">price : 1200 THB</p>
-                <button
-                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">Buy
-                    now</button>
-            </div>
-
-            <div class="mt-10 border-2 border-black rounded-3xl p-10 text-center">
-                <img src="sources\JS_course.jpg" alt="" class="h-10 md:h-12 w-auto object-contain mx-auto">
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">JavaScript for beginner</p>
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">price : 1200 THB</p>
-                <button
-                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">Buy
-                    now</button>
-            </div>
-
-            <div class="mt-10 border-2 border-black rounded-3xl p-10 text-center">
-                <img src="sources\JS_course.jpg" alt="" class="h-10 md:h-12 w-auto object-contain mx-auto">
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">JavaScript for beginner</p>
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">price : 1200 THB</p>
-                <button
-                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">Buy
-                    now</button>
-            </div>
-
-            <div class="mt-10 border-2 border-black rounded-3xl p-10 text-center">
-                <img src="sources\JS_course.jpg" alt="" class="h-10 md:h-12 w-auto object-contain mx-auto">
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">JavaScript for beginner</p>
-                <p class="sm:text-lg md:text-xl lg:text-2xl text-black">price : 1200 THB</p>
-                <button
-                    class="btn btn-primary bg-blue-400 text-black sm:text-lg md:text-xl lg:text-2xl font-bold text-black mt-6 ml-4 mb-5">Buy
-                    now</button>
-            </div>
-
-
         </section>
-
-
+        <div class="text-center mt-10">
+            <a href="#courses-heading" class="btn btn-primary text-white">Back to top</a>
+        </div>
     </main>
-
     <footer class="bg-[#03050d] py-4 text-center text-xs text-slate-500">
         <p>© 2025 AI MAXIMUS. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
